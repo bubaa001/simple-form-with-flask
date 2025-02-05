@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %} flask {% endblock%}
+
+{% block content %}
+
+    <hi> hello there </hi>
+    <form method="POST" action="{{ url_for('index')}}">
+        <input type="name" name="username" placeholder=" name ">
+        <input type="password" name="password" placeholder=" password ">
+        <input type="submit" value="login">
+         
+    </form>
+
+{% endblock %}    
